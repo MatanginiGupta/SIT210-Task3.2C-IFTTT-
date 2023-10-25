@@ -6,6 +6,7 @@
 ****/
 
 #include <WiFiNINA.h>
+#include <BH1750.h>
 
 // Please enter your sensitive data in the Secret tab
 char ssid[] = "jio_4g";          // My network SSID (name)
@@ -16,7 +17,8 @@ WiFiClient client;
 char HOST_NAME[] = "maker.ifttt.com";
 String PATH_NAME   = "/trigger/BHlight/json/with/key/5dSCxytPQo7E8zEZxW9PxM04XpjSrqYht9RKioRdYR";
  // my EVENT-NAME and KEY
-String queryString = "?value1=57&value2=25";
+String queryString = "?value1=&value2=";
+
 
 unsigned long startTime;
 unsigned long timerDuration = 20000;  // The timer can be adjusted according to my requirement
